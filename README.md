@@ -5,7 +5,7 @@ Reference : The flying sidekick traveling salesman problem_Optimization of drone
 For senario3, it takes about 8 minutes with (Visual Studio Code, i9, Python 3.13.2)
 
 
-Result of Senatio3 :
+### Result of Senatio3 :
 
     Result - Optimal solution found
 
@@ -35,4 +35,26 @@ Result of Senatio3 :
       i= 6 :  t =   6.00    tdot =   0.00
       i= 7 :  t =   0.00    tdot =  13.00
       i= 8 :  t =  40.00    tdot =  40.00
+
+## What you have to pay attention Solving FSTSP with OR-tools?
+    
+    1. Variable definition : solve.Intvar(a,b,"c") or solve.Numvar(a,b,"c")
+        1-1. Dictionaty type
+        1-2. a and b is lower bound and upper bound for each.
+        1-3. "c" is alias of variable.
+        1-4. intvar can only take integer value. Numvar can only take real value.
+        1-5. definite variables only exist in domain. It can make constraints easier.
+    2. sum terms : solve.Sum() and for comprehension
+        2-1. double sum -> using double for comprehension
+    3. for all value : use for
+    4. definite sets : i.e. C, N_0, Nplus
+    5. Separate variables and constrains.
+    6. objective function : t[n-1] (arrival time for finishing node)
+    7. Way to choose max value : definite a new variable and Add constraints to new variable as lower bound. Then minimize new variable.
+    8. " if (i, j, k) in y " it is not valid when y[i,j,k] ==1, but just y[i,j,k] is exist. (Not depend on value of y[i,j,k])
+    9. Arrival time in paper is definited as instant of time : Truck and Drone are not stop at any node. With this assumption, the time is called "effective arrival time"
+    
+    
+    
+    
     
