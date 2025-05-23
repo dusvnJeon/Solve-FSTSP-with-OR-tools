@@ -6,8 +6,17 @@ For senario3, it takes about 8 minutes with (Visual Studio Code, i9, Python 3.13
 
 Result of Senatio3 :
 
-    === CBC status : OPTIMAL ===
-    목적함수( makespan z ) = 40.00
+Result - Optimal solution found
+
+    Objective value:                40.00000000
+    Enumerated nodes:               30834
+    Total iterations:               1042232
+    Time (CPU seconds):             435.12
+    Time (Wallclock seconds):       435.12
+    
+    Total time (CPU seconds):       435.13   (Wallclock seconds):       435.13
+        === CBC status : OPTIMAL ===
+        목적함수( makespan z ) = 40.00
     
     Truck route : 0 -> 6 -> 1 -> 5 -> 4 -> 2 -> 8
     
