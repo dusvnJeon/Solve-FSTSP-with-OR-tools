@@ -15,12 +15,22 @@ Result of Senatio3 :
     • (5 → 3 → 8)
   
   Visit time of truck   t[i]   |   rendezvous time of drone   tdot[i]
+  
     i= 0 :  t =   0.00    tdot =   0.00
+    
     i= 1 :  t =  15.00    tdot =   0.00
+    
     i= 2 :  t =  38.00    tdot =   0.00
+    
     i= 3 :  t =   0.00    tdot =  38.00
+    
     i= 4 :  t =  33.00    tdot =   0.00
+    
     i= 5 :  t =  25.00    tdot =  25.00
+    
     i= 6 :  t =   6.00    tdot =   0.00
+    
     i= 7 :  t =   0.00    tdot =  13.00
+    
     i= 8 :  t =  40.00    tdot =  40.00
+    
